@@ -96,17 +96,15 @@ public class HelloController {
                         gridpane.addRow(radky);
                     }
                     gridpane.add(b, sloupce, radky);
-
                 }
+                ScrollPane scrollpane = new ScrollPane(gridpane);
+                vbox.getChildren().add(scrollpane);
+                scrollpane.setVisible(true);
             }
         }
-
-        ScrollPane scrollpane = new ScrollPane(gridpane);
-        vbox.getChildren().add(scrollpane);
         textarea.setVisible(true);
         addbtn.setVisible(true);
         clearbtn.setVisible(true);
-        scrollpane.setVisible(true);
         startbtn.setVisible(false);
         donebtn.setVisible(true);
     }
