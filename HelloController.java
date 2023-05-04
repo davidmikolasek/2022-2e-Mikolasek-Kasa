@@ -96,9 +96,11 @@ public class HelloController {
                         gridpane.addRow(radky);
                     }
                     gridpane.add(b, sloupce, radky);
+
                 }
             }
         }
+
         ScrollPane scrollpane = new ScrollPane(gridpane);
         vbox.getChildren().add(scrollpane);
         textarea.setVisible(true);
